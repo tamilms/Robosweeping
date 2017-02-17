@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:id="@+id/rootRelative">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/darker_gray"
+        android:layout_above="@+id/btn_sweep"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/ll_Direction">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Direct to Move"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+        <RadioGroup
+            android:id="@+id/Rg_direction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_north"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="North" />
+            <RadioButton
+                android:id="@+id/radio_south"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="South" />
+            <RadioButton
+                android:id="@+id/radio_East"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="East" />
+            <RadioButton
+                android:id="@+id/radio_west"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="West" />
+        </RadioGroup>
+        <EditText
+            android:id="@+id/edt_StepValue"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="numberDecimal"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            android:textColorHint="@android:color/background_light"
+            android:hint="Enter number of step robot to  move" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/btn_sweep"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/ll_btn">
+        <Button
+            android:id="@+id/btn_move"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Move" />
+        <Button
+            android:id="@+id/btn_sweep"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Clean" />
+    </LinearLayout>
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_Direction"
+        android:layout_toLeftOf="@+id/myimageView"
+        android:layout_toStartOf="@+id/myimageView" />
+    <ImageView
+        android:id="@+id/img_sweeper"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

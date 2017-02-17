@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your direction to move " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xYb-sT-la7" misplaced="YES">
+                                <rect key="frame" x="8" y="13" width="398" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Ebs-sN-8xE" misplaced="YES">
+                                <rect key="frame" x="8" y="42" width="398" height="22"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U0H-5E-EeC" fixedFrame="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="99.5" height="22"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="North" image="ic_checked">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZq-hj-MbE" fixedFrame="YES">
+                                        <rect key="frame" x="99.5" y="0.0" width="99.5" height="22"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="South" image="ic_unchecked">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inn-gk-R2D" fixedFrame="YES">
+                                        <rect key="frame" x="199" y="0.0" width="99.5" height="22"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="East" image="ic_unchecked">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZh-ds-RMF" fixedFrame="YES">
+                                        <rect key="frame" x="298.5" y="0.0" width="99.5" height="22"/>
+                                        <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="West" image="ic_unchecked">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter number of step to move" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rsI-Tq-e42" misplaced="YES">
+                                <rect key="frame" x="8" y="72" width="398" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gqo-Xv-asN" misplaced="YES">
+                                <rect key="frame" x="8" y="698" width="398" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yo-TI-RSP" fixedFrame="YES">
+                                        <rect key="frame" x="0.0" y="0.0" width="197" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Move">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tk1-uG-ShR" fixedFrame="YES">
+                                        <rect key="frame" x="201" y="0.0" width="197" height="30"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="Clean">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-gR-5ui" misplaced="YES">
+                                <rect key="frame" x="182" y="343" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="Fyr-5z-BDP"/>
+                                    <constraint firstAttribute="height" constant="50" id="PDr-Je-Y3r"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xYb-sT-la7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="13" id="0IS-ED-DCc"/>
+                            <constraint firstAttribute="trailing" secondItem="rsI-Tq-e42" secondAttribute="trailing" constant="8" id="CSz-xV-0Bm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gqo-Xv-asN" secondAttribute="bottom" constant="8" id="CcM-3R-e0O"/>
+                            <constraint firstItem="Rxy-gR-5ui" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SK6-0y-vjT"/>
+                            <constraint firstItem="rsI-Tq-e42" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="YPJ-bU-woG"/>
+                            <constraint firstItem="Ebs-sN-8xE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="euC-bO-WIo"/>
+                            <constraint firstItem="Ebs-sN-8xE" firstAttribute="top" secondItem="xYb-sT-la7" secondAttribute="bottom" constant="8" id="kKE-ue-KWU"/>
+                            <constraint firstAttribute="trailing" secondItem="Gqo-Xv-asN" secondAttribute="trailing" constant="8" id="mNt-y4-chG"/>
+                            <constraint firstAttribute="trailing" secondItem="xYb-sT-la7" secondAttribute="trailing" constant="8" id="oPI-F8-eDc"/>
+                            <constraint firstAttribute="trailing" secondItem="Ebs-sN-8xE" secondAttribute="trailing" constant="8" id="tSu-2a-ZTN"/>
+                            <constraint firstItem="Rxy-gR-5ui" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tYL-kr-z64"/>
+                            <constraint firstItem="Gqo-Xv-asN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="tgp-gL-jb3"/>
+                            <constraint firstItem="rsI-Tq-e42" firstAttribute="top" secondItem="Ebs-sN-8xE" secondAttribute="bottom" constant="8" id="tpF-YG-61Z"/>
+                            <constraint firstItem="xYb-sT-la7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="8" id="u53-fi-0rH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn_cmdClean" destination="Tk1-uG-ShR" id="name-outlet-Tk1-uG-ShR"/>
+                        <outlet property="btn_east" destination="inn-gk-R2D" id="name-outlet-inn-gk-R2D"/>
+                        <outlet property="btn_move" destination="8Yo-TI-RSP" id="name-outlet-8Yo-TI-RSP"/>
+                        <outlet property="btn_north" destination="U0H-5E-EeC" id="name-outlet-U0H-5E-EeC"/>
+                        <outlet property="btn_south" destination="hZq-hj-MbE" id="name-outlet-hZq-hj-MbE"/>
+                        <outlet property="btn_west" destination="sZh-ds-RMF" id="name-outlet-sZh-ds-RMF"/>
+                        <outlet property="edt_StepValue" destination="rsI-Tq-e42" id="name-outlet-rsI-Tq-e42"/>
+                        <outlet property="img_sweeper" destination="Rxy-gR-5ui" id="name-outlet-Rxy-gR-5ui"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.1304" y="138.587"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_checked" width="32" height="32"/>
+        <image name="ic_unchecked" width="32" height="32"/>
+    </resources>
+</document>
